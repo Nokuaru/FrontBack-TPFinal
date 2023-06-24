@@ -1,14 +1,19 @@
-const express = require ('express');
+const express = require("express");
 const app = express();
-const routerProducto = require ('./routes/routerProducto.js')
-port = 3000;
+const router = require("./routes/producto.js");
+const port = 3000;
+const conectarDB = require("./config/db");
 
-app.use('/api/productos', routerProducto);
+conectarDB();
 
-app.listen(port,() =>{
-    console.log(`Servidor funcionando en puerto ${port}`);
-})
+app.use(express.json());
 
-app.get('/',(req,res) => {
-    res.send("<h1>Bienvenido</h1>");
-})
+app.use("/api/productos", router);
+
+app.listen(port, () => {
+  console.log(`Servidor funcionando en puerto ${port}`);
+});
+
+app.get("/", (req, res) => {
+  res.send("<h1>Bienvenido</h1>");
+});

@@ -1,1 +1,43 @@
-<p>addeditproduct works!</p>
+<div class="container">
+    <div class="flex">
+        <h2>Agregar o modificar productos</h2>
+    </div>
+</div>
+
+<div class="container">
+    <form action="" id="agregarProducto">
+
+    </form>
+</div>
+
+
+<div class="container">
+    <form id="productoForm">
+        Nombre<input type="text" id="formNombre" class="form-control" placeholder="Ingrese el nombre del producto">
+        Descripción<input type="text" id="formDescripcion" class="form-control"
+            placeholder="Haga una descripción del producto">
+        Precio<input type="text" id="formPrecio" class="form-control" placeholder="Ingrese el precio del producto">
+        Stock<input type="text" id="formStock" class="form-control" placeholder="Ingrese la cantidad disponible">
+        <div class="flexito">
+            <button type="submit" class="btn btn-primary btn-sm">Agregar</button>
+        </div>
+    </form>
+
+
+    <script>
+
+        ("#productoForm").submit(function (e) {
+            e.preventDefault();
+        })
+        let productos = document.getElementById("productoForm");
+
+        productos.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let nombre = document.getElementById("formNombre");
+            console.log(nombre);
+            alert("This form has been successfully submitted!");
+            return false;
+        })
+    </script>
+</div>

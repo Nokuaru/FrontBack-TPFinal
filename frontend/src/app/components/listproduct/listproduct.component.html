@@ -10,14 +10,19 @@
         <th scope="col">Descripción</th>
         <th scope="col">Precio</th>
         <th scope="col">Stock</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
-      <tr class="table-active">
-        <th scope="row">Active</th>
-        <td>Column content</td>
-        <td>Column content</td>
-        <td>Column content</td>
+      <tr class="table-light" *ngFor="let item of listProducts" > 
+        <th scope="row" >{{item.nombre}}</th>
+        <td>{{item.descripcion}} </td>
+        <td>{{item.precio}}</td>
+        <td>{{item.stock}}</td>
+        <td class="flexito">
+          <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+          <button type="button" class="btn btn-outline-danger btn-sm">Eliminar</button>
+        </td>
       </tr>
     </tbody>
   </table>

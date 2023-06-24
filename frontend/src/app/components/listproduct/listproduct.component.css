@@ -9,4 +9,12 @@
 
 table {
     margin-top:40px;
+    margin-right:20px;
+}
+
+
+.flexito
+{
+    display:flex;
+    justify-content:space-evenly;
 }

@@ -1,0 +1,32 @@
+POST http://localhost:3000/api/productos HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Surtido Bagley",
+    "descripcion": "Galletitas",
+    "price": 500,
+    "stock": 10
+}
+
+###
+
+GET http://localhost:3000/api/productos
+
+###
+
+DELETE http://localhost:3000/api/productos/ACÁLETENGOQUEPASARELOBJECTID
+
+###
+
+GET http://localhost:3000/api/productos/ACÁLETENGOQUEPASARELOBJECTID
+
+###
+
+PUT http://localhost:3000/api/productos/ACÁLETENGOQUEPASARELOBJECTID
+
+{
+    "name": "Surtido Bagley",
+    "descripcion": "Galletitas dulces",
+    "price": 500,
+    "stock": 10
+}
