@@ -19,25 +19,9 @@
         Precio<input type="text" id="formPrecio" class="form-control" placeholder="Ingrese el precio del producto">
         Stock<input type="text" id="formStock" class="form-control" placeholder="Ingrese la cantidad disponible">
         <div class="flexito">
-            <button type="submit" class="btn btn-primary btn-sm">Agregar</button>
+            <button type="submit" class="btn btn-primary btn-sm separador">Agregar</button>
+            <button type="volver" class="btn btn-primary btn-sm separador" routerLink="/">Volver</button>
         </div>
     </form>
 
-
-    <script>
-
-        ("#productoForm").submit(function (e) {
-            e.preventDefault();
-        })
-        let productos = document.getElementById("productoForm");
-
-        productos.addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            let nombre = document.getElementById("formNombre");
-            console.log(nombre);
-            alert("This form has been successfully submitted!");
-            return false;
-        })
-    </script>
 </div>

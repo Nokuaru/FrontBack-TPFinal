@@ -20,3 +20,12 @@ form {
     justify-content:right;
     margin-top: 15px;
 }
+
+.separador {
+    margin-right: 10px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: right;
+}
