@@ -30,10 +30,11 @@ exports.eliminarProducto = async (req, res) => {
     let producto = await Producto.findById(req.params.id); //Esto me devuelve el ID que puso el usuario en la ruta de la URL
     if (!producto) {
       //Si el producto no existe (porque no existe ese ID) vamos acá.
-      res.status(404).json("No existe el producto solicitado");
+      return res.status(404).json("No existe el producto solicitado");
     }
     await Producto.findOneAndRemove({ _id: req.params.id }); //Busco en la base de datos de mongo en el campo _id por el ID que nos proveyeron y lo eliminamos
     res.status(200).json("El producto ha sido eliminado con éxito");
+    console.log(producto);
   } catch (error) {
     console.log(error);
     res.status(500).send("Hubo un error...");
@@ -45,7 +46,7 @@ exports.obtenerProducto = async (req, res) => {
     let producto = await Producto.findById(req.params.id); //Esto me devuelve el ID que puso el usuario en la ruta de la URL
     if (!producto) {
       //Si el producto no existe (porque no existe ese ID) vamos acá.
-      res.status(404).json("No existe el producto solicitado");
+      return res.status(404).json("No existe el producto solicitado");
     }
     res.json(producto);
   } catch (error) {
@@ -57,22 +58,20 @@ exports.obtenerProducto = async (req, res) => {
 exports.actualizarProducto = async (req, res) => {
   try {
     const { name, description, price, stock } = req.body;
-    let producto = Producto.findById(req.params.id);
-
+    let producto = await Producto.findById(req.params.id);
     if (!producto) {
-      res.json("No existe el producto");
+      return res.status(404).json("No existe el producto solicitado");
     }
+
     producto.name = name;
     producto.description = description;
     producto.price = price;
     producto.stock = stock;
-
     producto = await Producto.findOneAndUpdate(
       { _id: req.params.id },
       producto,
       { new: true }
-    ); //{new:true} es un objeto que le dice que es un objeto nuevo (????)
-
+    );
     res.json(producto);
   } catch (error) {
     console.log(error);
