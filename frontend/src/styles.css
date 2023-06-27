@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+    height: 100%;
+  }
+
+  .content-outer-container {
+    min-height: 93%;
+  }
+
+  .content-inner-container {
+    padding-bottom: 56px;
+  }
+
+
