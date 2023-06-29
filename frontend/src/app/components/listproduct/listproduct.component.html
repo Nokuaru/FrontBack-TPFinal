@@ -1,29 +1,29 @@
 <div class="container">
-    <div class="flex">
-        <h2>Listado de Productos</h2>
-        <button type="button" class="btn btn-primary btn-sm" routerLink="/add">Agregar producto</button>
-    </div>
+  <div class="flex">
+      <h2>Listado de Productos</h2>
+      <button type="button" class="btn btn-primary btn-sm" routerLink="/add">Agregar producto</button>
+  </div>
 <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">Nombre</th>
-        <th scope="col">Descripción</th>
-        <th scope="col">Precio</th>
-        <th scope="col">Stock</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="table-light" *ngFor="let item of listProducts" > 
-        <th scope="row" >{{item.nombre}}</th>
-        <td>{{item.descripcion}} </td>
-        <td>{{item.precio}}</td>
-        <td>{{item.stock}}</td>
-        <td class="flexito">
-          <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
-          <button type="button" class="btn btn-outline-danger btn-sm">Eliminar</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Stock</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of listProducts" class="table-light" > 
+      <th scope="row" >{{producto.name}}</th>
+      <td>{{producto.description}} </td>
+      <td>{{producto.price}}</td>
+      <td>{{producto.stock}}</td>
+      <td class="flexito">
+        <button type="button" class="btn btn-outline-info btn-sm">Editar</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="eliminarProducto(producto._id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
 </div>

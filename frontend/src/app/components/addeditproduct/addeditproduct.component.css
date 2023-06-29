@@ -1,18 +1,6 @@
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
 .container {
     margin-top:70px;
 }
-
-form {
-    margin-top:40px;
-    margin-right:20%;
-    margin-left:20%;
-}
-
 
 .flexito
 {
@@ -25,7 +13,3 @@ form {
     margin-right: 10px;
 }
 
-.container-fluid {
-    display: flex;
-    justify-content: right;
-}
