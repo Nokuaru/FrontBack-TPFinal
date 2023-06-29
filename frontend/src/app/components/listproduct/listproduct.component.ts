@@ -1,74 +1,49 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Producto } from 'src/app/models/producto';
+import { ProductoService } from 'src/app/services/producto.service';
 
 @Component({
   selector: 'app-listproduct',
   templateUrl: './listproduct.component.html',
-  styleUrls: ['./listproduct.component.css']
+  styleUrls: ['./listproduct.component.css'],
 })
-export class ListproductComponent {
-  usuarios = ["Pedro","Luna","Jorge"];
-  listProducts = [
-    {
-      nombre: 'Papas fritas',
-      descripcion: 'Producto salado',
-      precio: '300',
-      stock: '17'
-    },
-    {
-      nombre: 'Coca cola',
-      descripcion: 'Bebida carbonatada',
-      precio: '150',
-      stock: '25'
-    },
-    {
-      nombre: 'Chocolate negro',
-      descripcion: 'Tableta de chocolate amargo',
-      precio: '200',
-      stock: '12'
-    },
-    {
-      nombre: 'Galletas de avena',
-      descripcion: 'Galletas saludables',
-      precio: '250',
-      stock: '30'
-    },
-    {
-      nombre: 'Manzanas',
-      descripcion: 'Frutas frescas',
-      precio: '100',
-      stock: '40'
-    },
-    {
-      nombre: 'Pan integral',
-      descripcion: 'Pan hecho con harina integral',
-      precio: '80',
-      stock: '15'
-    },
-    {
-      nombre: 'Yogur griego',
-      descripcion: 'Yogur cremoso',
-      precio: '120',
-      stock: '20'
-    },
-    {
-      nombre: 'Café molido',
-      descripcion: 'Café de tueste medio',
-      precio: '350',
-      stock: '10'
-    },
-    {
-      nombre: 'Agua mineral',
-      descripcion: 'Agua sin gas',
-      precio: '50',
-      stock: '50'
-    },
-    {
-      nombre: 'Huevos',
-      descripcion: 'Huevos frescos',
-      precio: '180',
-      stock: '8'
-    }
-  ]
+export class ListproductComponent implements OnInit {
+  listProducts: Producto[] = [];
 
+  constructor(private _productoService: ProductoService) {}
+
+  ngOnInit(): void {
+    this.obtenerProductos();
+  }
+
+  obtenerProductos() {
+    this._productoService.getProductos().subscribe({
+      next: (data) => {
+        console.log(data);
+        this.listProducts = data;
+      },
+      error: (err) => {
+        console.log(err);
+      },
+    });
+  }
+
+  eliminarProducto(id:any) {
+    this._productoService.deleteProductos(id).subscribe({
+      next: (data) => {
+        console.log (data);
+        this.obtenerProductos() //Yo lo que quiero es que después de borrarlo, me devuelva la página actualizada, entonces le paso la función de obtener producto
+      },
+      error: (err) => {
+        console.log(err)
+      }
+      }
+    )
+  }
   
+  editarProducto(producto:Producto) {
+    
+  }
+
+
 }
