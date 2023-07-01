@@ -1,0 +1,47 @@
+<div class="container">
+    <h2>Agregar Pokemon</h2>
+
+    <div class="flexito">
+        <div id="vistaPrevia">
+            <h4>Vista Previa</h4>
+            <div *ngIf="pokemonForm.get('image')?.value" class="image-preview">
+                <img [src]="pokemonForm.get('image')?.value" alt="Vista previa de imagen" />
+            </div>
+        </div>
+
+        <div id="formAgregar">
+            <form (ngSubmit)="agregarPokemon()" [formGroup]="pokemonForm">
+
+                <label class="form-label mt-1">Número</label>
+                <input type="number" formControlName="number" class="form-control"
+                    placeholder="Ingrese el número del pokemon">
+                <label class="form-label mt-1">Nombre</label>
+                <input type="text" formControlName="name" class="form-control"
+                    placeholder="Ingrese el nombre del pokemon">
+                <label class="form-label mt-1">Descripción</label>
+                <textarea class="form-control" placeholder="Haga una descripción del pokemon" formControlName="description" class="form-control" rows="3"></textarea>
+
+
+                <label class="form-label mt-1">Tipo</label>
+                <select class="form-select form-control" formControlName="type">
+                    <option>Agua</option>
+                    <option>Lucha</option>
+                    <option>Veneno</option>
+                    <option>Planta</option>
+                    <option>Psíquico</option>
+                    <option>Fuego</option>
+                    <option>Normal</option>
+                    <option>Tierra</option>
+                    <option>Volador</option>
+                    <option>Eléctrico</option>
+                </select>
+                Imagen<input type="url" formControlName="image" class="form-control"
+                    placeholder="Ingrese la URL de la imagen del pokemon" (paste)="onPaste($event)">
+
+                <div class="flexito">
+                    <button type="submit" class="btn btn-primary btn-sm separador">Agregar</button>
+                    <button type="button" class="btn btn-primary btn-sm separador" routerLink="/">Volver</button>
+                </div>
+            </form>
+
+        </div>

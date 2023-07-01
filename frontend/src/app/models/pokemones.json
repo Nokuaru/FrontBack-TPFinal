@@ -1,0 +1,149 @@
+[
+    {
+      "pokeNum": "001",
+      "pokeName": "Bulbasaur",
+      "pokeDesc": "Bulbasaur es un Pokémon de tipo planta/veneno que tiene un bulbo en su espalda que crece a medida que evoluciona.",
+      "pokeType": "Planta/Veneno",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+      "pokeNum": "004",
+      "pokeName": "Charmander",
+      "pokeDesc": "Charmander es un Pokémon de tipo fuego con una pequeña llama en la punta de su cola.",
+      "pokeType": "Fuego",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+    },
+    {
+      "pokeNum": "007",
+      "pokeName": "Squirtle",
+      "pokeDesc": "Squirtle es un Pokémon de tipo agua que puede lanzar potentes chorros de agua desde su boca.",
+      "pokeType": "Agua",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+    },
+    {
+      "pokeNum": "025",
+      "pokeName": "Pikachu",
+      "pokeDesc": "Pikachu es un Pokémon eléctrico reconocido por sus mejillas rosadas y su capacidad para generar electricidad.",
+      "pokeType": "Eléctrico",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+      "pokeNum": "016",
+      "pokeName": "Pidgey",
+      "pokeDesc": "Pidgey es un Pokémon de tipo normal/volador que tiene una gran habilidad para volar y encontrar comida.",
+      "pokeType": "Normal/Volador",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+    },
+    {
+      "pokeNum": "019",
+      "pokeName": "Rattata",
+      "pokeDesc": "Rattata es un Pokémon de tipo normal conocido por su pequeño tamaño y su afición por roer objetos.",
+      "pokeType": "Normal",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png"
+    },
+    {
+      "pokeNum": "023",
+      "pokeName": "Ekans",
+      "pokeDesc": "Ekans es un Pokémon de tipo veneno con forma de serpiente que puede emitir veneno desde su boca.",
+      "pokeType": "Veneno",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png"
+    },
+    {
+      "pokeNum": "037",
+      "pokeName": "Vulpix",
+      "pokeDesc": "Vulpix es un Pokémon de tipo fuego conocido por su cola en llamas y su capacidad para controlar el fuego.",
+      "pokeType": "Fuego",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png"
+    },
+    {
+      "pokeNum": "039",
+      "pokeName": "Jigglypuff",
+      "pokeDesc": "Jigglypuff es un Pokémon de tipo normal/hada que tiene la habilidad de hacer dormir a sus oponentes con su canto.",
+      "pokeType": "Normal/Hada",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png"
+    },
+    {
+      "pokeNum": "041",
+      "pokeName": "Zubat",
+      "pokeDesc": "Zubat es un Pokémon de tipo veneno/volador que vive en cuevas y se guía por medio de ondas ultrasónicas.",
+      "pokeType": "Veneno/Volador",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png"
+    },
+    {
+      "pokeNum": "050",
+      "pokeName": "Diglett",
+      "pokeDesc": "Diglett es un Pokémon de tipo tierra que vive bajo tierra y solo asoma su cabeza para atacar.",
+      "pokeType": "Tierra",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png"
+    },
+    {
+      "pokeNum": "052",
+      "pokeName": "Meowth",
+      "pokeDesc": "Meowth es un Pokémon de tipo normal conocido por su habilidad para recolectar objetos brillantes.",
+      "pokeType": "Normal",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png"
+    },
+    {
+      "pokeNum": "054",
+      "pokeName": "Psyduck",
+      "pokeDesc": "Psyduck es un Pokémon de tipo agua conocido por su constante dolor de cabeza que provoca fuertes dolores.",
+      "pokeType": "Agua",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png"
+    },
+    {
+      "pokeNum": "056",
+      "pokeName": "Mankey",
+      "pokeDesc": "Mankey es un Pokémon de tipo lucha que se enfada fácilmente y se vuelve más agresivo cuando está enfadado.",
+      "pokeType": "Lucha",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png"
+    },
+    {
+      "pokeNum": "058",
+      "pokeName": "Growlithe",
+      "pokeDesc": "Growlithe es un Pokémon de tipo fuego conocido por su lealtad y su capacidad para detectar el peligro.",
+      "pokeType": "Fuego",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/058.png"
+    },
+    {
+      "pokeNum": "060",
+      "pokeName": "Poliwag",
+      "pokeDesc": "Poliwag es un Pokémon de tipo agua conocido por la esfera traslúcida que tiene en su abdomen.",
+      "pokeType": "Agua",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png"
+    },
+    {
+      "pokeNum": "063",
+      "pokeName": "Abra",
+      "pokeDesc": "Abra es un Pokémon de tipo psíquico conocido por su capacidad para teletransportarse y leer mentes.",
+      "pokeType": "Psíquico",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png"
+    },
+    {
+      "pokeNum": "066",
+      "pokeName": "Machop",
+      "pokeDesc": "Machop es un Pokémon de tipo lucha que tiene una gran fuerza y está constantemente entrenando.",
+      "pokeType": "Lucha",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png"
+    },
+    {
+      "pokeNum": "069",
+      "pokeName": "Bellsprout",
+      "pokeDesc": "Bellsprout es un Pokémon de tipo planta/veneno con una planta carnívora en la cabeza que utiliza para atrapar presas.",
+      "pokeType": "Planta/Veneno",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png"
+    },
+    {
+      "pokeNum": "072",
+      "pokeName": "Tentacool",
+      "pokeDesc": "Tentacool es un Pokémon de tipo agua/veneno con tentáculos venenosos que utiliza para atrapar presas.",
+      "pokeType": "Agua/Veneno",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png"
+    },
+    {
+      "pokeNum": "074",
+      "pokeName": "Geodude",
+      "pokeDesc": "Geodude es un Pokémon de tipo roca/tierra conocido por su cuerpo rocoso y su gran resistencia.",
+      "pokeType": "Roca/Tierra",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png"
+    }
+  ]
