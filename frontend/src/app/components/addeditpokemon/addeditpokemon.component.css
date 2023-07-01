@@ -1,0 +1,29 @@
+.container {
+  margin-top: 70px;
+}
+
+.flexito {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.separador {
+  margin-right: 10px;
+}
+
+#vistaPrevia {
+  text-align: center;
+  flex: 1;
+  border-width: 1px;
+  border-style: groove;
+  margin-right: 10px;
+}
+
+#vistaPrevia img {
+  max-height: 300px;
+}
+
+#formAgregar {
+  flex: 3;
+}
