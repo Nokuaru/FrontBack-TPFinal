@@ -1,0 +1,35 @@
+POST http://localhost:3000/api/pokedex HTTP/1.1
+Content-Type: application/json
+
+    {
+      "pokeNum": "056",
+      "pokeName": "Mankey",
+      "pokeDesc": "Mankey es un Pokémon de tipo lucha que se enfada fácilmente y se vuelve más agresivo cuando está enfadado.",
+      "pokeType": "Lucha",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png"
+    }
+
+###
+
+GET http://localhost:3000/api/pokedex
+
+###
+
+DELETE http://localhost:3000/api/pokedex/64a056f3764385f8f9ced919
+
+###
+
+GET http://localhost:3000/api/pokedex/64a056f3764385f8f9ced919
+
+###
+
+PUT http://localhost:3000/api/pokedex/64a056f3764385f8f9ced919
+Content-Type: application/json
+
+    {
+      "pokeNum": "056",
+      "pokeName": "Mankey",
+      "pokeDesc": "Mankey es un Pokémon de tipo lucha que se enfada fácilmente y se vuelve más agresivo cuando está enfadado.",
+      "pokeType": "Lucha",
+      "pokeImg": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png"
+    }
