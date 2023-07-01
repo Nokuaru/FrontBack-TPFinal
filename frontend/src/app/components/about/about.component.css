@@ -9,3 +9,9 @@
     margin-top:30px;
     text-align: center;
 }
+
+.flexito {
+    display: flex;
+    justify-content: right;
+    margin-top: 15px;
+  }
